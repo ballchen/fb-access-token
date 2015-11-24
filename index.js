@@ -48,7 +48,6 @@ access_token.prototype.login = function (callback) {
 
 access_token.prototype.getToken = function (callback) {
   // use graph api explorer to get access token
-  console.log('https://developers.facebook.com/tools/explorer/' + this.appId + '/permissions?version=v2.1&__a=1&__dyn=5U463-i3S2e4oK4pomXWo5O12wAxu&__req=2&__rev=1470714');
   request.get({
     url: 'https://developers.facebook.com/tools/explorer/' + this.appId + '/permissions?version=v2.1&__a=1&__dyn=5U463-i3S2e4oK4pomXWo5O12wAxu&__req=2&__rev=1470714'
   }, function (err, res, body) {
